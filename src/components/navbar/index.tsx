@@ -1,12 +1,13 @@
 'use client'
 
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from "react-scroll"
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Sobre', href: '#', current: false },
-    { name: 'Projetos', href: '#', current: false },
-    { name: 'Tecnologias', href: '#', current: false },
+    { name: 'Sobre', href: '#', current: false, to: 'sobre', spy: true, smooth: true, offset: - 100, duration: 500 },
+    { name: 'Projetos', href: '#', current: false, to: 'projetos', spy: true, smooth: true, offset: - 100, duration: 500 },
+    { name: 'Tecnologias', href: '#', current: false, to: 'techs', spy: true, smooth: true, offset: - 100, duration: 500 },
 ]
 
 function classNames(...classes: string[]) {
@@ -15,7 +16,7 @@ function classNames(...classes: string[]) {
 
 export default function Example() {
     return (
-        <Disclosure as="nav" className="bg-gray-900">
+        <Disclosure as="nav" className="bg-gray-900 fixed w-full">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -35,7 +36,12 @@ export default function Example() {
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
-                                            <a
+                                            <Link
+                                                to={item.to}
+                                                spy={item.spy}
+                                                smooth={item.smooth}
+                                                offset={item.offset}
+                                                duration={item.duration}
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
@@ -45,7 +51,7 @@ export default function Example() {
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
                                                 {item.name}
-                                            </a>
+                                            </Link>
                                         ))}
                                         <a href="https://web.whatsapp.com/send?phone=5522998562641"
                                             className='text-gray-300 hover:text-[#34d399] duration-150 rounded-md px-3 py-2 text-sm font-medium'
@@ -71,18 +77,23 @@ export default function Example() {
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
                             {navigation.map((item) => (
-                                <Disclosure.Button
+                                <Link
+                                    to={item.to}
+                                    spy={item.spy}
+                                    smooth={item.smooth}
+                                    offset={item.offset}
+                                    duration={item.duration}
                                     key={item.name}
-                                    as="a"
                                     href={item.href}
+                                    as="a"
                                     className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:text-[#34d399] duration-150',
                                         'block rounded-md px-3 py-2 text-base font-medium'
                                     )}
-                                    aria-current={item.current ? 'page' : undefined}
+                                    aria-current={item.current ? 'page' : false}
                                 >
                                     {item.name}
-                                </Disclosure.Button>
+                                </Link>
                             ))}
                         </div>
                     </Disclosure.Panel>
