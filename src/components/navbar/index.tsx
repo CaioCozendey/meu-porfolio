@@ -3,6 +3,7 @@
 import { Link } from "react-scroll"
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from "next/image"
 
 const navigation = [
     { name: 'Sobre', href: '#', current: false, to: 'sobre', spy: true, smooth: true, offset: - 100, duration: 500 },
@@ -64,7 +65,7 @@ export default function Example() {
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <div>
-                                    <img
+                                    <Image
                                         className="h-8 w-8 rounded-full"
                                         src="/me.png"
                                         alt=""
