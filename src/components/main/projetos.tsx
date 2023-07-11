@@ -1,7 +1,7 @@
 import Card from "../card/cardeffect"
 
 const projects = [
-    { id: 1, name: 'Spotify', href: 'https://www.google.com/search?q=instam&oq=instam&aqs=edge..69i57j0i512j0i10i433i512j0i10i512l3j0i512l2j69i60.527j0j1&sourceid=chrome&ie=UTF-8', descrition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna quam, rutrum vitae nisl non, vehicula posuere purus. Cras hendrerit porttitor nisi.' },
+    { id: 1, name: 'Model', href: '/', descrition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna quam, rutrum vitae nisl non, vehicula posuere purus. Cras hendrerit porttitor nisi.' },
 ]
 
 function Projetos() {
