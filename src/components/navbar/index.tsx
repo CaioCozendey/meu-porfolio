@@ -68,7 +68,9 @@ export default function Navbar() {
                                     <Image
                                         className="h-8 w-8 rounded-full"
                                         src="/me.png"
-                                        alt=""
+                                        alt="Eu"
+                                        width={32}
+                                        height={32}
                                     />
                                 </div>
                             </div>
