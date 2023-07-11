@@ -16,8 +16,7 @@ export default function Tech() {
             <h1 className="text-white text-3xl xl:text-5xl lg:text-5xl font-semibold pb-12 text-center xl:text-left lg:text-left"> Tecnologias </h1>
             <div className="flex flex-row flex-wrap justify-around text-8xl pb-8 text-[#34d399] gap-8">
                 {techs.map((item) => (
-                    <div
-                        key={item.id}>
+                    <div>
                         {item.icon}
                         <p className="text-lg text-center pt-2" key={item.id}>{item.name}</p>
                     </div>

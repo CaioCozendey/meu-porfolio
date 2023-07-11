@@ -12,7 +12,6 @@ export default function Projetos() {
             <div className="px-auto grid grid-cols-2 md:grid-cols-3 lg-grid-cols-4 xl:grid-cols-4 gap-4 justify-around ps-4 pb-12">
                 {projects.map((item) => (
                     <a
-                        key={item.id}
                         href={item.href}
                         target="_blank"
                     >
