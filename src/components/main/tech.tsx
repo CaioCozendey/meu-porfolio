@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs } from "react-icons/si"
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss } from "react-icons/si"
 
 const techs = [
     { id: 1, name: 'HTML', icon: <SiHtml5 /> },
@@ -6,7 +6,8 @@ const techs = [
     { id: 3, name: 'Javascript', icon: <SiJavascript /> },
     { id: 4, name: 'Typescript', icon: <SiTypescript /> },
     { id: 5, name: 'ReactJS', icon: <SiReact /> },
-    { id: 6, name: 'NextKS', icon: <SiNextdotjs /> },
+    { id: 6, name: 'NextJS', icon: <SiNextdotjs /> },
+    { id: 7, name: 'Tailwind', icon: <SiTailwindcss /> },
 ]
 
 function Tech() {
