@@ -7,7 +7,6 @@ const navigation = [
     { name: 'Sobre', href: '#', current: false },
     { name: 'Projetos', href: '#', current: false },
     { name: 'Tecnologias', href: '#', current: false },
-    { name: 'WhatsApp', href: 'https://web.whatsapp.com/send?phone=5522998562641', current: false, target: '_blank' },
 ]
 
 function classNames(...classes: string[]) {
@@ -40,7 +39,7 @@ export default function Example() {
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
-                                                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-800 hover:text-white', 
+                                                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:text-[#34d399] duration-150',
                                                     'rounded-md px-3 py-2 text-sm font-medium'
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}
@@ -48,6 +47,12 @@ export default function Example() {
                                                 {item.name}
                                             </a>
                                         ))}
+                                        <a href="https://web.whatsapp.com/send?phone=5522998562641"
+                                            className='text-gray-300 hover:text-[#34d399] duration-150 rounded-md px-3 py-2 text-sm font-medium'
+                                            target="_blank"
+                                        >
+                                            WhatsApp
+                                        </a>
                                     </div>
                                 </div>
                             </div>

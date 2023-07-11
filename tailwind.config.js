@@ -16,6 +16,12 @@ module.exports = withMT({
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'light-green': '#276b6f',
+      },
+      aspectRatio: {
+        '9/12' : '9 / 12',
+      },
     },
   },
   plugins: [],
