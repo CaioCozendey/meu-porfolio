@@ -17,9 +17,9 @@ export default function Footer() {
                         <span className="self-center text-2xl font-semibold whitespace-nowrap text-white pr-2">Caio Dias</span>
                     </div>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                        {navigation.map((item) => (
+                        {navigation.map((item, index) => (
                             <li
-                                key={item.name}
+                                key={index}
                                 className={'mr-4 hover:underline md:mr-6 flex gap-1'
 
                                 }
