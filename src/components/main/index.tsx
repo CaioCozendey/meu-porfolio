@@ -2,10 +2,7 @@ import Tech from "./tech";
 import Projetos from "./projetos";
 import Sobre from "./sobre";
 
-
-
-
-export default function () {
+function Main() {
     return (
         <div className="mx-auto max-w-6xl px-2 sm:px-2 lg:px-8">
             <Sobre />
@@ -14,3 +11,5 @@ export default function () {
         </div>
     )
 }
+
+export default Main;
