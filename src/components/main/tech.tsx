@@ -1,12 +1,12 @@
 import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs } from "react-icons/si"
 
 const techs = [
-    { name: 'HTML', icon: <SiHtml5 /> },
-    { name: 'CSS', icon: <SiCss3 /> },
-    { name: 'Javascript', icon: <SiJavascript /> },
-    { name: 'Typescript', icon: <SiTypescript /> },
-    { name: 'ReactJS', icon: <SiReact /> },
-    { name: 'NextKS', icon: <SiNextdotjs /> },
+    { id: 1, name: 'HTML', icon: <SiHtml5 /> },
+    { id: 2, name: 'CSS', icon: <SiCss3 /> },
+    { id: 3, name: 'Javascript', icon: <SiJavascript /> },
+    { id: 4, name: 'Typescript', icon: <SiTypescript /> },
+    { id: 5, name: 'ReactJS', icon: <SiReact /> },
+    { id: 6, name: 'NextKS', icon: <SiNextdotjs /> },
 ]
 
 export default function Tech() {
@@ -17,6 +17,7 @@ export default function Tech() {
             <div className="flex flex-row flex-wrap justify-around text-8xl pb-8 text-[#34d399] gap-8">
                 {techs.map((tech) => (
                     <div>
+                        key={tech.id}
                         {tech.icon}
                         <p className="text-lg text-center pt-2">{tech.name}</p>
                     </div>

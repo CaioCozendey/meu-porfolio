@@ -1,7 +1,7 @@
 import Card from "../card/cardeffect"
 
 const projects = [
-    { name: 'Spotify', href: 'https://www.google.com/search?q=instam&oq=instam&aqs=edge..69i57j0i512j0i10i433i512j0i10i512l3j0i512l2j69i60.527j0j1&sourceid=chrome&ie=UTF-8', descrition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna quam, rutrum vitae nisl non, vehicula posuere purus. Cras hendrerit porttitor nisi.' },
+    { id: 1, key: 'spotify', name: 'Spotify', href: 'https://www.google.com/search?q=instam&oq=instam&aqs=edge..69i57j0i512j0i10i433i512j0i10i512l3j0i512l2j69i60.527j0j1&sourceid=chrome&ie=UTF-8', descrition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna quam, rutrum vitae nisl non, vehicula posuere purus. Cras hendrerit porttitor nisi.' },
 ]
 
 export default function Projetos() {
@@ -16,7 +16,7 @@ export default function Projetos() {
                         target="_blank"
                     >
                         <Card
-                            key={item.name}
+                            key={item.id}
                             name={item.name}
                             text={item.descrition}
                         />
