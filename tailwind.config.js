@@ -19,9 +19,6 @@ module.exports = withMT({
       colors: {
         'light-green': '#276b6f',
       },
-      aspectRatio: {
-        '9/12' : '9 / 12',
-      },
     },
   },
   plugins: [],

@@ -1,7 +1,7 @@
 import Card from "../card/cardeffect"
 
 const projects = [
-    { id: 1, name: 'Model', href: '/', descrition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna quam, rutrum vitae nisl non, vehicula posuere purus. Cras hendrerit porttitor nisi.' },
+    { id: 1, name: 'Portfólio', href: '/', descrition: 'Essé e o meu Portfólio! Meu primeiro site que desenvolvi 100% e fiz deploy. Querendo ou não também é um projeto.', image: '/portfolio.png' },
 ]
 
 function Projetos() {
@@ -21,6 +21,7 @@ function Projetos() {
                             <Card
                                 name={item.name}
                                 text={item.descrition}
+                                image={item.image}
                             />
                         </a>
 
