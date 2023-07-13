@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 
 interface Card {
     text: string,
@@ -9,7 +10,7 @@ export default function Card(props: Card) {
 
     return (
         <div className="static rounded-lg duration-300 cursor-pointer w-48 h-72 bg-cover bg-no-repeat"
-            style={{ backgroundImage: `url(${props.image})`,}}
+            style={{ backgroundImage: `url(${props.image})`}}
         >
             <div className="w-full h-72 hover:bg-white hover:bg-opacity-5 rounded-lg hover:backdrop-blur-lg duration-300">
                 <div className="w-48 h-64 pt-2 text-transparent hover:text-white hover:blur-none duration-300 px-4">
