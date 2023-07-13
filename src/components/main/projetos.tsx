@@ -1,7 +1,7 @@
 import Card from "../card/cardeffect"
 
 const projects = [
-    { id: 1, name: 'Portfólio', href: '/', descrition: 'Essé e o meu Portfólio! Meu primeiro site que desenvolvi 100% e fiz deploy. Querendo ou não também é um projeto.', image: '/portfolio.png' },
+    { id: 1, name: 'Portfólio', href: '/', descrition: 'Essé e o meu Portfólio! Meu primeiro site que desenvolvi 100% e fiz deploy. Querendo ou não também é um projeto.', image: 'https://static4.depositphotos.com/1003326/319/i/450/depositphotos_3191160-stock-photo-blurry-bright-background.jpg' },
 ]
 
 function Projetos() {
