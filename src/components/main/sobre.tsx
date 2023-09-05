@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Sobre() {
     return (
         <div id='sobre'>
-            <div className="text-white pt-3 text-center xl:text-left lg:text-left">
+            <div className="text-white pt-4 text-center xl:text-left lg:text-left">
                 <p className="pl-1">Olá, meu nome é</p>
                 <h1 className="text-[#34d399] text-6xl xl:text-8xl lg:text-8xl font-semibold pt-12">Caio Dias.</h1>
                 <h1 className="text-[#28926b] text-4xl xl:text-6xl lg:text-6xl font-semibold pt-3">Front-end Developer</h1>

@@ -13,11 +13,11 @@ function Projetos() {
         <div className="mt-4" >
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <h1 className="text-white text-3xl xl:text-5xl lg:text-5xl font-semibold pb-12 text-center xl:text-left lg:text-left" id='projetos'> Projetos </h1>
-            <div className="px-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 justify-around ps-4 pb-12">
+            <div className="px-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 justify-around pb-12">
                 {projects.map((item) => (
                     <div
                         key={item.name}
-                        className="w-48"
+                        className="w-48 mx-auto"
                     >
                         <a
                             href={item.href}
