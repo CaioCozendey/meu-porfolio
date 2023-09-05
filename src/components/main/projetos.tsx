@@ -3,6 +3,7 @@ import Card from "../card/cardeffect"
 
 const projects = [
     { id: 1, name: 'Portfólio', href: '/', descrition: 'Essé e o meu Portfólio! Meu primeiro site que desenvolvi 100% e fiz deploy. Querendo ou não também é um projeto.', image: 'https://raw.githubusercontent.com/CaioCozendey/meu-porfolio/main/public/portfolio.PNG' },
+    { id: 2, name: 'Calculadora', href: '/', descrition: 'In Development! Essa é uma calculadora baseada na do MacOS desenvolvida com Reactjs e Tailwind', image: 'https://raw.githubusercontent.com/CaioCozendey/meu-porfolio/main/public/portfolio.PNG' },
 ]
 
 
