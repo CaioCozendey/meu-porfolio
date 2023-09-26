@@ -19,6 +19,16 @@ module.exports = withMT({
       colors: {
         'light-green': '#276b6f',
       },
+      keyframes: {
+        "animar-cursor":{
+          "0%":{
+            color: "rgb(124 58 237",
+          },
+          "100%":{
+            color: "rgb(0,0,0,0)",
+          },
+        },
+      },
     },
   },
   plugins: [],
