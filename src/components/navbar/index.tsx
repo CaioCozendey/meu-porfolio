@@ -7,6 +7,7 @@ import Image from "next/image"
 
 const navigation = [
     { name: 'Sobre', href: '#', current: false, to: 'sobre', spy: true, smooth: true, offset: - 100, duration: 500 },
+    { name: 'Experiências', href: '#', current: false, to: 'experiencias', spy: true, smooth: true, offset: - 100, duration: 500 },
     { name: 'Projetos', href: '#', current: false, to: 'projetos', spy: true, smooth: true, offset: - 100, duration: 500 },
     { name: 'Tecnologias', href: '#', current: false, to: 'techs', spy: true, smooth: true, offset: - 100, duration: 500 },
 ]
