@@ -1,12 +1,13 @@
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss } from "react-icons/si"
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiPython, SiSelenium  } from "react-icons/si"
 
 const techs = [
+    { id: 1, name: 'Python', icon: <SiPython />, hover: 'hover:text-[#4584B6] duration-300' },
+    { id: 1, name: 'Selenium', icon: <SiSelenium />, hover: 'hover:text-[#ffffff] duration-300' },
     { id: 1, name: 'HTML', icon: <SiHtml5 />, hover: 'hover:text-[#ec6231] duration-300' },
     { id: 2, name: 'CSS', icon: <SiCss3 />, hover: 'hover:text-[#264de4] duration-300' },
     { id: 3, name: 'Javascript', icon: <SiJavascript />, hover: 'hover:text-[#f0db4f] duration-300' },
     { id: 4, name: 'Typescript', icon: <SiTypescript />, hover: 'hover:text-[#007acc] duration-300' },
     { id: 5, name: 'ReactJS', icon: <SiReact />, hover: 'hover:text-[#61DBFB] duration-300' },
-    { id: 6, name: 'NextJS', icon: <SiNextdotjs />, hover: 'hover:text-[#ffffff] duration-300' },
     { id: 7, name: 'Tailwind', icon: <SiTailwindcss />, hover: 'hover:text-[#3490dc] duration-300' },
 ]
 
