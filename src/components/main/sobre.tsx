@@ -9,7 +9,7 @@ export default function Sobre() {
                 <h1 className="text-[#34d399] text-6xl xl:text-8xl lg:text-8xl font-semibold pt-12">Caio Dias</h1>
                 <h1 className="text-[#28926b] text-4xl xl:text-6xl lg:text-6xl font-semibold pt-3">Python Developer</h1>
                 <div className="m-auto">                    
-                    <p className="pl-1 pt-4 max-w-3xl h-32 xl:h-20 mx-4 xl:m-auto lg:m-auto">
+                    <p className="pl-1 pt-4 max-w-3xl h-40 xl:h-20 mx-4 xl:m-auto lg:m-auto">
                         < Typewriter 
                             text="  Sou um desenvolvedor Python com experiência profissional. 
                             Atualmente trabalho na Tree Inova com Automação de Processos utilizando Python, 
